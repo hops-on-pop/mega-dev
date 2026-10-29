@@ -2,11 +2,13 @@
 
 ## CURRENT STATE — 2026-10-29, supersedes historical NEXT entries below
 
+**SOLVED** at 2026-10-29T23:51:31Z. Accepted commit: 056062bdf8ddb583ceccccc767ce6515b9c5fc75. Remote source, rendered HTML and PNG matched verified local artifacts byte-for-byte. Debrief saved: https://hq.mega.dev/challenges/what-it-shows#debrief. No remaining challenge work; do not follow historical NEXT instructions.
+
 - Issues #1 and #2 now describe two classified causes and record the exact engineering outcomes. Verified by independent GET: #1 closed/completed (379), #2 closed/not_planned (33); #3 unchanged, open investigation.
 - Resubmission advanced to a DIFFERENT rejection: no .svx carries the course-issued signature. The course explicitly requires the `ticket` from start-challenge as frontmatter `signature:`, not the author's name.
 - Called start-challenge again to recover that ticket. Its `proofs` and `ticketUse` fields explicitly specify this requirement. Prior handoffs omitted it. Do not use the historical human-name signature or its desk ref.
 - Corrected +page.svx locally with the exact issued ticket and rebuilt; regenerated rendered.html and rendered.png. The rendered stamp was checked against the signature algorithm and counts remain 379 / 33 / 412.
-- NEXT: human commits and pushes these local page artifacts, then submit the repo again. No new submission until the signature fix is on GitHub. Acceptance remains unverified.
+- Human pushed the corrected artifacts; resubmission returned `solved`. Acceptance is verified. Issue #3 remains open; it did not prevent acceptance.
 - User authorized GitHub work; no agent commit was authorized. Do not commit automatically. This progress is evidence of a new validation stage, not proof of which individual issue-body edit mattered.
 
 Challenge uuid: c0000000-0000-4000-8000-0000005e01e3 · page: https://hq.mega.dev/challenges/what-it-shows
@@ -18,9 +20,9 @@ Exact page text: see log.md (first entry). Every request/reply is logged there.
 - [x] Human downloaded kb-export-267efc5e.zip into s01e03/ (sha256 starts 267efc5e — matches name).
 - [x] Unpacked to media/support-kb/ (pristine; untrusted, run nothing from it).
 - [x] Analysis: scripts/analyze.py, scripts/flips.py, scripts/counts.py → out/unique.json, out/counts.json.
-- [ ] Human approves repo choice and each GitHub issue before filing.
-- [ ] Write signed .svx page + rendered page; add to kb in repo.
-- [ ] Send repo to the course (how: TBD from kb/course replies) → claim → debrief.
+- [x] Human approved repo and issue work.
+- [x] Signed .svx and rendered page published with the course-issued signature.
+- [x] Repository submitted, solve accepted, debrief saved.
 
 ## Facts
 - Candidate repo: hops-on-pop/mega-dev (PUBLIC, issues enabled). Human said: use this repo, human does all pushes.

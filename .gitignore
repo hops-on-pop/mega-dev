@@ -10,3 +10,4 @@ challenges/s01e03/media/
 challenges/s01e03/bodies/
 challenges/s01e03/out/
 challenges/s01e03/*.zip
+challenges/*/private/
