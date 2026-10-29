@@ -35,7 +35,8 @@ The fix queued for #4471 only covers the parser. The other two problems stay ope
   channel of booking-v3 tenants, and fixing the parser does not fix it.
 - **`one-day`**: day and month stay put; the invite lands a day early or late, shows a different
   weekday to people in different places, or arrives before the booking was made. That is not
-  date order. The desk noticed these (`desk-notes.json`) but filed them under `parser` by tenant.
+  date order. The desk noted these (`desk-notes.json`) and counts them where they are filed, under
+  `parser` by tenant; the table does the same and gives them a row of their own.
 
 Intake's tag is a guess from the reporter's browser. The tenant decides the cause, so the table
 counts by tenant, not by tag.
@@ -44,7 +45,7 @@ counts by tenant, not by tag.
 
 - A subject line tells you a report is about dates. It does not tell you which bug. Before you
   mark a big ticket known, split it by cause, not by subject.
-- A footnote under the wrong cause is still the wrong cause. If the desk reads a report
-  differently from the rule, it is a problem of its own.
+- A footnote is easy to miss. If the desk reads a report differently from the rule, give it a
+  ticket of its own, even while it stays counted where it is filed.
 
 <RenderStamp {signature} />

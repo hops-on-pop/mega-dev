@@ -13,7 +13,7 @@
 <p class="sum">
   <strong>{split.unique}</strong> reports merged into #{ticket} ·
   <strong>{split.groups.length}</strong>
-  {split.groups.length === 1 ? 'problem' : 'problems'}
+  {split.groups.length === 1 ? 'problem' : 'problems'}, counted the desk's way
 </p>
 
 <table>
@@ -24,7 +24,7 @@
     {#each split.groups as g (g.problem)}
       <tr>
         <td><code>{g.problem}</code><br /><span class="what">{PROBLEM_TEXT[g.problem]}</span></td>
-        <td>{g.reports}</td>
+        <td>{g.reports}{#if g.filedUnder.length}<br /><span class="what">also in {g.filedUnder.join(', ')}</span>{/if}</td>
         <td>{g.tenants}</td>
         <td>{g.firstSeen} → {g.lastSeen}</td>
         <td>{g.mistagged}</td>
@@ -39,6 +39,13 @@
     {/each}
   </tbody>
 </table>
+
+{#each split.groups.filter((g) => g.filedUnder.length) as g (g.problem)}
+  <p class="note">
+    {g.reports} reports read as a <code>{g.problem}</code> move are counted where the desk files them
+    (<code>{g.filedUnder.join(', ')}</code>, by tenant) and again on their own row.
+  </p>
+{/each}
 
 <p class="note">
   The export holds {split.exported} rows for #{ticket}; {split.exported - split.unique} of them are the same report

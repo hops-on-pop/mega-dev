@@ -45,3 +45,8 @@ Exact page text: see log.md (first entry). Every request/reply is logged there.
 - KbIndex lists the new page. Root .gitignore now hides s01e03 log/media/bodies/out/zip.
 - NEXT: human commits + pushes → claim-challenge (answer shape unknown; no receipts held — call and follow the reply) → debrief.
 - Watch: "the desk keeps working" — re-download export + check issues for comments before claiming.
+
+## Claim 1 — rejected
+- desk: "Right problems. The desk counts with its own view, as it was exported." → problems right, counts wrong.
+- Desk's own view = CauseTable as exported: parser 379 (incl. the 5 one-day, "counted where they're filed, footnoted under it" per causes.ts readAs), hint 33, one-day 5 footnoted. Our #1 said 374.
+- Plan: #1 → 379 (title+body), #3 body notes the 5 are also counted in #1; page ProblemTable counts the desk's way; re-push; re-claim.
