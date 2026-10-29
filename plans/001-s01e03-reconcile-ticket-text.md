@@ -1,6 +1,6 @@
 # S01E03: reconcile the two accepted tickets with verified evidence
 
-Status: prepared for review; no GitHub changes or new submission made.
+Status: DONE. User approved GitHub work; both bodies edited and independently verified. Counts, titles, closure states and #3 preserved. One resubmission now rejects the missing course-issued signature, rather than the previous closure mismatch. The exact contribution of each body edit is unknown. See CURRENT STATE at the top of challenges/s01e03/HANDOFF.md for the recovered signature requirement and local artifact correction awaiting human commit/push.
 Planned at: 1e08fceeb395dbfdbc7534ae6b97a13fec14d45e, 2026-10-29.
 Priority P1; effort S; risk LOW; category docs; dependencies none.
 

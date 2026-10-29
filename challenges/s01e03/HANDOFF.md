@@ -1,5 +1,14 @@
 # S01E03 "what it shows" — handoff
 
+## CURRENT STATE — 2026-10-29, supersedes historical NEXT entries below
+
+- Issues #1 and #2 now describe two classified causes and record the exact engineering outcomes. Verified by independent GET: #1 closed/completed (379), #2 closed/not_planned (33); #3 unchanged, open investigation.
+- Resubmission advanced to a DIFFERENT rejection: no .svx carries the course-issued signature. The course explicitly requires the `ticket` from start-challenge as frontmatter `signature:`, not the author's name.
+- Called start-challenge again to recover that ticket. Its `proofs` and `ticketUse` fields explicitly specify this requirement. Prior handoffs omitted it. Do not use the historical human-name signature or its desk ref.
+- Corrected +page.svx locally with the exact issued ticket and rebuilt; regenerated rendered.html and rendered.png. The rendered stamp was checked against the signature algorithm and counts remain 379 / 33 / 412.
+- NEXT: human commits and pushes these local page artifacts, then submit the repo again. No new submission until the signature fix is on GitHub. Acceptance remains unverified.
+- User authorized GitHub work; no agent commit was authorized. Do not commit automatically. This progress is evidence of a new validation stage, not proof of which individual issue-body edit mattered.
+
 Challenge uuid: c0000000-0000-4000-8000-0000005e01e3 · page: https://hq.mega.dev/challenges/what-it-shows
 Exact page text: see log.md (first entry). Every request/reply is logged there.
 

@@ -2,7 +2,7 @@
 
 | Plan | Priority | Effort | Status |
 | --- | --- | --- | --- |
-| [001: S01E03 ticket consistency](001-s01e03-reconcile-ticket-text.md) | P1 | S | Prepared for review |
+| [001: S01E03 ticket consistency](001-s01e03-reconcile-ticket-text.md) | P1 | S | DONE: bodies verified; claim now identifies missing course signature |
 
 No dependencies. The plan corrects proven stale prose; the remaining course
 acceptance requirement is unknown.

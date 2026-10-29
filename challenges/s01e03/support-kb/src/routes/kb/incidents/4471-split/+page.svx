@@ -4,7 +4,7 @@ title: '#4471 · two causes and an unresolved observation'
 owner: Mike Jones
 status: investigation
 reviewed: 2026-10-29
-signature: Mike Jones (hops-on-pop), with Claude
+signature: 'v1.eyJzdWIiOiIxMTcyIiwiYXVkIjoiY2hhbGxlbmdlOndoYXQtaXQtc2hvd3MiLCJpYXQiOjE3OTMzMTc3NDAsImV4cCI6MTc5MzQwNDE0MH0.kV3UEgx7CoWq1Bd7i_kDI0FrvwykdaBtFvByTr3otoo'
 ---
 
 <script>
