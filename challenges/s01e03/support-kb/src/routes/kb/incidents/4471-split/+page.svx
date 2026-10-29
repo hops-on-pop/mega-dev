@@ -1,0 +1,50 @@
+---
+layout: runbook
+title: '#4471 · three problems, not one'
+owner: Mike Jones
+status: open
+reviewed: 2026-10-29
+signature: Mike Jones (hops-on-pop), with Claude
+---
+
+<script>
+  import ProblemTable from '#lib/kb/ProblemTable.svelte';
+  import Callout from '#lib/kb/Callout.svelte';
+  import RenderStamp from '#lib/kb/RenderStamp.svelte';
+</script>
+
+[#4471](/kb/incidents/4471) is marked known: one issue, one fix queued. The reports in it say
+otherwise. They were merged by subject line ([decision 0001](/kb/decisions/0001-dedupe-by-subject)),
+and a subject line says that a date is wrong, not why. Read by tenant, channel and body, the
+ticket holds three problems. Each one now has a ticket of its own.
+
+<Callout kind="warn">
+The fix queued for #4471 only covers the parser. The other two problems stay open until their own tickets are fixed.
+</Callout>
+
+## What #4471 holds
+
+<ProblemTable ticket={4471} repo="hops-on-pop/mega-dev" tickets={{ parser: 1, hint: 2, 'one-day': 3 }} />
+
+## How to tell them apart
+
+- **`parser`**: the shared parser reads every date month first. Every tenant on file writes the
+  day first, so day and month swap: a booking for 7 April lands on 4 July. Any channel.
+- **`hint`**: booking-v3 prints `MM/DD/YYYY` under its date field. People type what it says,
+  month first, and the form reads the date day first. Same swap, different bug: only the `form`
+  channel of booking-v3 tenants, and fixing the parser does not fix it.
+- **`one-day`**: day and month stay put; the invite lands a day early or late, shows a different
+  weekday to people in different places, or arrives before the booking was made. That is not
+  date order. The desk noticed these (`desk-notes.json`) but filed them under `parser` by tenant.
+
+Intake's tag is a guess from the reporter's browser. The tenant decides the cause, so the table
+counts by tenant, not by tag.
+
+## Lessons
+
+- A subject line tells you a report is about dates. It does not tell you which bug. Before you
+  mark a big ticket known, split it by cause, not by subject.
+- A footnote under the wrong cause is still the wrong cause. If the desk reads a report
+  differently from the rule, it is a problem of its own.
+
+<RenderStamp {signature} />
