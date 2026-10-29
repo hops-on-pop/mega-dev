@@ -92,3 +92,10 @@ Exact page text: see log.md (first entry). Every request/reply is logged there.
 - Signed page records 5 October engineering outcomes: parser fixed, hint won't fix because booking-v3 retired. Investigation #3 remains open.
 - Regenerated rendered.html and rendered.png. npm run build passed; rendered counts/signature checked; screenshot visually inspected and literal Markdown link corrected.
 - NEXT: human reviews, commits and pushes local changes, then resubmit. No commit or push by agent. Course acceptance is still unverified; reopening #3 may affect its all-tickets-closed check.
+
+## 2026-10-29 — reconciled page pushed and submitted
+- Verified local HEAD and GitHub main both 1e08fceeb395dbfdbc7534ae6b97a13fec14d45e; working tree was clean before this handoff entry.
+- Submitted unchanged answer {repo: https://github.com/hops-on-pop/mega-dev}.
+- Still rejected: "Not accepted: your tickets are closed, but not the way the course expects. Check them against the task, then send the repo again." Desk: "Closed, but not the way the desk would. Things moved since your first submit."
+- #3 is OPEN, so the response's "tickets are closed" appears to refer to the two classified tickets, or is generic. It does not establish that #3 must close.
+- Do not repeat speculation as a confirmed diagnosis. #1 completed and #2 not_planned match the visible engineering outcomes, but the remaining acceptance requirement is unidentified.
