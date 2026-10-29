@@ -1,0 +1,48 @@
+[   0.00-   1.44]  Summary for last night.
+[   2.12-   5.22]  All times are local, plus two hours.
+[   6.34-   7.00]  Service.
+[   8.08-   9.08]  Calendar invites.
+[  10.54-  14.64]  This summary covers the nightly batch for all regions.
+[  16.00-  16.88]  Nightly batch.
+[  17.58-  19.66]  Scheduled for 3.45.
+[  21.30-  22.54]  Queue before batch.
+[  23.68-  24.08]  Normal.
+[  25.34-  26.32]  Workers ready.
+[  27.62-  28.26]  All.
+[  28.26-  41.98]  nightly batch started at 350 regions in scope all timezone data loaded calendar
+[  41.98-  55.84]  sync running as planned invites moved 2140 invites failed none reported tests
+[  55.84-  56.90]  Passed.
+[  57.12-  58.48]  Skipped tests.
+[  58.84-  59.42]  None.
+[  60.62-  61.66]  Mail delivery.
+[  62.68-  63.20]  Normal.
+[  64.70-  65.54]  Nightly batch.
+[  66.14-  67.88]  Ended at 438.
+[  69.10-  70.80]  State after batch.
+[  71.72-  72.20]  Clean.
+[  73.66-  74.82]  Checks after batch.
+[  75.84-  76.42]  Passed.
+[  77.48-  78.56]  Alerts raised.
+[  79.38-  79.84]  None.
+[  80.94-  81.94]  Rollbacks.
+[  83.18-  83.64]  None.
+[  84.60-  93.16]  First report from a user. Received at 5.19. Reports since then. Rising.
+[  94.74- 100.84]  Billed. Within limits. Other records for this night. Not received.
+[ 102.04- 110.40]  Support queue. Open. Next batch. Tomorrow night. At the usual time.
+[ 111.28- 112.60]  End of summary
+[   0.00-   7.48]  SUMMARY FOR LAST NIGHT, ALL TIMES ARE UTC. SERVICE, CALENDAR, INVITES.
+[   8.84-  12.54]  THIS SUMMARY COVERS THE NIGHTLY BATCH, FOR ALL CHANGES.
+[  13.58-  20.60]  CHANGES SHIPPED BEFORE THE BATCH, 1. OTHER RECORDS FOR THIS NIGHT, NOT RECEIVED.
+[  21.88-  26.68]  MODE, READ ONLY. DEPENDENCY UPDATES, NONE.
+[  26.68-  36.42]  Nightly batch, approved at 1.40. Approvals, complete. Pending approvals, none.
+[  37.52-  44.22]  Notes for the next night, none. Nightly batch, started at 1.50.
+[  45.52-  51.44]  Signatures, all changes signed. Retries, none needed.
+[  51.44-  57.62]  Warnings, none logged. Owner notes, none attached.
+[  59.00-  65.14]  Config drift, not detected. Invites moved by shipped changes,
+[  65.94-  71.68]  1,870. Storage, within limits.
+[  72.88-  78.28]  Coverage, unchanged. Changes held back, none.
+[  79.22-  86.84]  Nightly batch, ended at 2.38. Sync to partner calendars, complete.
+[  87.80-  94.48]  Health checks, passing on every target. Secret scan, nothing found.
+[  95.88- 103.06]  Error budget, not touched. First report from a user, received at 3.19.
+[ 104.12- 111.66]  Queue after batch, empty. Next batch, tomorrow night, at the usual time.
+[ 113.02- 113.92]  End of Summary

@@ -1,0 +1,282 @@
+[
+ {
+  "start": 0.0,
+  "end": 1.523,
+  "text": "Summary for last night."
+ },
+ {
+  "start": 2.03,
+  "end": 3.854,
+  "text": "All times are UTC."
+ },
+ {
+  "start": 5.328,
+  "end": 5.86,
+  "text": "Service."
+ },
+ {
+  "start": 6.224,
+  "end": 7.45,
+  "text": "Calendar invites."
+ },
+ {
+  "start": 8.857,
+  "end": 11.094,
+  "text": "This summary covers the nightly batch."
+ },
+ {
+  "start": 11.473,
+  "end": 12.583,
+  "text": "for all changes."
+ },
+ {
+  "start": 13.882,
+  "end": 16.141,
+  "text": "Changes shipped before the batch 1."
+ },
+ {
+  "start": 17.491,
+  "end": 19.123,
+  "text": "Other records for this night."
+ },
+ {
+  "start": 19.699,
+  "end": 20.386,
+  "text": "NOT RECEIVED"
+ },
+ {
+  "start": 21.931,
+  "end": 22.351,
+  "text": "MODE"
+ },
+ {
+  "start": 22.848,
+  "end": 23.832,
+  "text": "Read only."
+ },
+ {
+  "start": 24.984,
+  "end": 26.604,
+  "text": "Dependency updates none."
+ },
+ {
+  "start": 28.026,
+  "end": 28.983,
+  "text": "Knightly Badge"
+ },
+ {
+  "start": 29.421,
+  "end": 31.1,
+  "text": "Approved at 1.40."
+ },
+ {
+  "start": 32.478,
+  "end": 33.241,
+  "text": "Approvals"
+ },
+ {
+  "start": 33.64,
+  "end": 34.163,
+  "text": "COMPLETE"
+ },
+ {
+  "start": 34.719,
+  "end": 35.724,
+  "text": "pending approvals."
+ },
+ {
+  "start": 36.114,
+  "end": 36.353,
+  "text": "None."
+ },
+ {
+  "start": 37.827,
+  "end": 39.314,
+  "text": "Notes for the next night."
+ },
+ {
+  "start": 39.827,
+  "end": 40.128,
+  "text": "None."
+ },
+ {
+  "start": 41.572,
+  "end": 42.531,
+  "text": "Nightly Badge"
+ },
+ {
+  "start": 42.952,
+  "end": 44.253,
+  "text": "Started at 1.50"
+ },
+ {
+  "start": 45.532,
+  "end": 46.263,
+  "text": "Signatures"
+ },
+ {
+  "start": 46.754,
+  "end": 48.113,
+  "text": "All changes signed."
+ },
+ {
+  "start": 49.551,
+  "end": 50.346,
+  "text": "reTRIES"
+ },
+ {
+  "start": 50.775,
+  "end": 51.539,
+  "text": "non-needed."
+ },
+ {
+  "start": 52.333,
+  "end": 52.961,
+  "text": "WARNINGS!"
+ },
+ {
+  "start": 53.34,
+  "end": 54.029,
+  "text": "Non-logged."
+ },
+ {
+  "start": 55.52,
+  "end": 57.716,
+  "text": "Owner Notes. None Attached."
+ },
+ {
+  "start": 59.118,
+  "end": 60.041,
+  "text": "CONFIG DRIFT"
+ },
+ {
+  "start": 60.535,
+  "end": 61.33,
+  "text": "NOT DETECTED"
+ },
+ {
+  "start": 62.77,
+  "end": 65.212,
+  "text": "INVITES MOVED BY SHIPPED CHANGES"
+ },
+ {
+  "start": 65.951,
+  "end": 68.364,
+  "text": "one thousand eight hundred and seventy"
+ },
+ {
+  "start": 69.838,
+  "end": 70.5,
+  "text": "storage"
+ },
+ {
+  "start": 70.903,
+  "end": 71.744,
+  "text": "within limits."
+ },
+ {
+  "start": 72.896,
+  "end": 73.446,
+  "text": "COVERAGE"
+ },
+ {
+  "start": 73.975,
+  "end": 74.827,
+  "text": "Unchanged."
+ },
+ {
+  "start": 76.2,
+  "end": 77.462,
+  "text": "Change is held back."
+ },
+ {
+  "start": 77.972,
+  "end": 78.251,
+  "text": "None."
+ },
+ {
+  "start": 79.675,
+  "end": 80.627,
+  "text": "Nightly batch"
+ },
+ {
+  "start": 81.087,
+  "end": 82.781,
+  "text": "Ended at 2.38"
+ },
+ {
+  "start": 84.203,
+  "end": 85.947,
+  "text": "Sync to partner calendars."
+ },
+ {
+  "start": 86.376,
+  "end": 86.763,
+  "text": "COMPLETE"
+ },
+ {
+  "start": 88.333,
+  "end": 89.17,
+  "text": "Health Checks"
+ },
+ {
+  "start": 89.535,
+  "end": 91.188,
+  "text": "Passing on every target."
+ },
+ {
+  "start": 92.334,
+  "end": 94.497,
+  "text": "Secret scan, nothing found."
+ },
+ {
+  "start": 95.893,
+  "end": 96.75,
+  "text": "Error budget."
+ },
+ {
+  "start": 97.258,
+  "end": 98.02,
+  "text": "Not touched."
+ },
+ {
+  "start": 99.382,
+  "end": 101.084,
+  "text": "First report from a user."
+ },
+ {
+  "start": 101.515,
+  "end": 103.147,
+  "text": "Received at 3.19."
+ },
+ {
+  "start": 104.645,
+  "end": 105.809,
+  "text": "Queue after batch."
+ },
+ {
+  "start": 106.349,
+  "end": 106.728,
+  "text": "Empty."
+ },
+ {
+  "start": 107.954,
+  "end": 108.832,
+  "text": "Next batch."
+ },
+ {
+  "start": 109.271,
+  "end": 110.153,
+  "text": "Tomorrow night."
+ },
+ {
+  "start": 110.51,
+  "end": 111.523,
+  "text": "at the usual time."
+ },
+ {
+  "start": 113.036,
+  "end": 113.948,
+  "text": "End of summary"
+ }
+]
