@@ -50,3 +50,45 @@ Exact page text: see log.md (first entry). Every request/reply is logged there.
 - desk: "Right problems. The desk counts with its own view, as it was exported." → problems right, counts wrong.
 - Desk's own view = CauseTable as exported: parser 379 (incl. the 5 one-day, "counted where they're filed, footnoted under it" per causes.ts readAs), hint 33, one-day 5 footnoted. Our #1 said 374.
 - Plan: #1 → 379 (title+body), #3 body notes the 5 are also counted in #1; page ProblemTable counts the desk's way; re-push; re-claim.
+
+## Claim 2 — progress (tickets accepted), 2026-10-29
+- Issues edited: #1 → 379 (title+body, bodies/issue-parser.v2.*), #3 body notes overlap (bodies/issue-one-day.v2.md). Human pushed 18c2fbc (page shows parser 379, one-day 5 "also in parser").
+- message: "Step one passed: the course accepted your tickets. Not solved yet. When the work on #4471 is done, close your tickets, then send the repo again."
+- desk: "Two tickets, both real. The desk isn't done with #4471 yet. When it is, close yours and submit again."  (note: we filed THREE; "two" unexplained)
+- resume-challenge → "That challenge has nothing to pick back up."
+- Signal for "desk done" unknown. Checked: Challenge page unchanged, export still kb-export-267efc5e.zip (public URL, no auth; page itself needs sign-in), issues have no comments.
+- NEXT: watch for the desk finishing #4471 (new export name on the page / changed 4471 page / issue comments) → close #1–#3 (gh issue close --reason, read --help) → claim again → debrief. Also: save the gh routine as a skill (check-lane "keep").
+- Skill saved: ~/.claude/skills/gh-issues/SKILL.md (create/edit/close/inspect issues; ask before every change).
+- check-lane hint for code "progress" → "unknown-code" (no hint).
+- Theory (human): the desk will post on our open issues (anyone can comment on a public repo). Watcher: scripts/watch-issues.sh → out/watch.log, polls #1–#3 every 2 min for any non-hops-on-pop event/state/label/comment change; started 2026-10-29T22:40Z, max 2h.
+- Human: wait to close issues until the desk says #4471 is done.
+
+## 2026-10-29 follow-up — closure rejected
+- Unchanged resubmission: rejected; course explicitly requested closing tickets then submitting again. This supersedes the unsupported waiting plan above.
+- Human approved closing #1–#3 and resubmitting. Closed all three with reason completed; verified CLOSED through GitHub. No commits or pushes.
+- Resubmission rejected: "Not accepted: your tickets are closed, but not the way the course expects. Check them against the task, then send the repo again."
+- Desk hint: "Closed, but not the way the desk would. Things moved since your first submit."
+- Checked timelines: only hops-on-pop edits/cross-references/closures, no desk comments. Re-downloaded original export: SHA256 still 267efc5ea61aca6efaaca842160ac4d0377d56bcbf5123e61c604d6ae99597f2.
+- Closure reason or supporting closure information remains unresolved. Do not assume all problems were fixed or blindly cycle closure reasons. Need current desk evidence; original export only records queued work.
+- check-lane hint for rejected returned unknown-code. Challenge remains unsolved; no debrief yet.
+
+## 2026-10-29 — missing engineering update found
+- Read the full signed-in Challenge page, including below the prompt. It has a NEW · DESK UPDATE / engineering update section.
+- Exact update: #4471 · closed 05 oct; parser FIXED — fix(dates): parse dd/mm for eu locales; hint WON’T FIX — booking-v3 form retired.
+- This resolves the missing source: the original export need not change. Earlier page text reads truncated at 2500 characters missed the lower section.
+- Correct closure mapping: #1 parser completed; #2 hint not planned. #2 is currently incorrectly completed. No GitHub mutations made during this evaluation.
+- #3 one-day is not addressed by this update; do not claim it was fixed based on this evidence.
+- Next concrete action: correct #2 closure reason to not planned and resubmit. Keep page claims consistent with the engineering update; human retains commits/pushes.
+
+## 2026-10-29 — hint closure corrected, still rejected
+- Human approved changing #2 to not planned and resubmitting. GitHub PATCH confirmed state closed / state_reason not_planned.
+- Claim returned the same rejection: "Not accepted: your tickets are closed, but not the way the course expects. Check them against the task, then send the repo again." Desk: "Closed, but not the way the desk would. Things moved since your first submit."
+- Subsequent independent GET of all issues confirmed #1 completed, #2 not_planned, #3 completed. Correction persisted; do not repeat it.
+- Remaining discrepancies: #3 has no demonstrated fix in the desk update; signed page still says parser fix queued and the other two stay open until fixed. Course rejection does not identify which remaining detail it checks. No further GitHub changes, commits, or pushes.
+
+## 2026-10-29 — page reconciled; investigation reopened
+- User approved page reconciliation and reopening #3. #3 is verified OPEN; revised title/body describe unresolved one-day symptoms, with no claim of a confirmed cause or fix.
+- problems.ts now returns two cause groups and separate observations. ProblemTable shows 379 + 33 = 412, with five one-day reports footnoted within parser rather than counted again.
+- Signed page records 5 October engineering outcomes: parser fixed, hint won't fix because booking-v3 retired. Investigation #3 remains open.
+- Regenerated rendered.html and rendered.png. npm run build passed; rendered counts/signature checked; screenshot visually inspected and literal Markdown link corrected.
+- NEXT: human reviews, commits and pushes local changes, then resubmit. No commit or push by agent. Course acceptance is still unverified; reopening #3 may affect its all-tickets-closed check.

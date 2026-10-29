@@ -1,7 +1,4 @@
-// What a merged ticket holds, problem by problem, counted the desk's way. causes.ts files each
-// report under parser or hint by tenant and channel. A report the desk read as a one-day move
-// (desk-notes.json) is a problem of its own: its date keeps day and month, only the day shifts.
-// The desk still counts it where it is filed, so it is counted there and again on its own row.
+// Preserve the desk's cause counts; keep one-day observations separate.
 import notes from '#lib/data/desk-notes.json';
 import { causeOf, uniqueById, type Report, type Tenant } from '#lib/kb/causes';
 
@@ -49,7 +46,7 @@ export function splitTicket(all: Report[], ticket: number, tenantOf: (r: Report)
   const groups = [...by.entries()].map(([p, rs]) => group(p, rs)).sort((a, b) => b.reports - a.reports);
 
   const moved = merged.filter((r) => notes.oneDayMove.includes(r.id));
-  if (moved.length) groups.push(group('one-day', moved, [...new Set(moved.map(filed))]));
+  const observations = moved.length ? [group('one-day', moved, [...new Set(moved.map(filed))])] : [];
 
-  return { exported, unique: merged.length, groups };
+  return { exported, unique: merged.length, groups, observations };
 }

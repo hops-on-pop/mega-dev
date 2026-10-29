@@ -1,8 +1,8 @@
 ---
 layout: runbook
-title: '#4471 · three problems, not one'
+title: '#4471 · two causes and an unresolved observation'
 owner: Mike Jones
-status: open
+status: investigation
 reviewed: 2026-10-29
 signature: Mike Jones (hops-on-pop), with Claude
 ---
@@ -13,39 +13,47 @@ signature: Mike Jones (hops-on-pop), with Claude
   import RenderStamp from '#lib/kb/RenderStamp.svelte';
 </script>
 
-[#4471](/kb/incidents/4471) is marked known: one issue, one fix queued. The reports in it say
-otherwise. They were merged by subject line ([decision 0001](/kb/decisions/0001-dedupe-by-subject)),
-and a subject line says that a date is wrong, not why. Read by tenant, channel and body, the
-ticket holds three problems. Each one now has a ticket of its own.
+The 4 October export describes [#4471](/kb/incidents/4471) as one known issue with a fix queued.
+Its reports were merged by subject line ([decision 0001](/kb/decisions/0001-dedupe-by-subject)).
+The desk's classification code identifies two causes: parser and hint. Each has a ticket of its own.
+The one-day reports remain an unresolved observation within the parser count.
+
+## Engineering update
+
+The [challenge page](https://hq.mega.dev/challenges/what-it-shows), checked on 29 October,
+reports that #4471 closed on 5 October:
+
+- **Parser — fixed:** “fix(dates): parse dd/mm for eu locales”.
+  [Issue #1](https://github.com/hops-on-pop/mega-dev/issues/1) is closed as completed.
+- **Hint — won't fix:** booking-v3 was retired.
+  [Issue #2](https://github.com/hops-on-pop/mega-dev/issues/2) is closed as not planned.
 
 <Callout kind="warn">
-The fix queued for #4471 only covers the parser. The other two problems stay open until their own tickets are fixed.
+The update does not establish a separate cause or a verified fix for the one-day reports.
+<a href="https://github.com/hops-on-pop/mega-dev/issues/3">Issue #3</a> remains open for investigation.
 </Callout>
 
-## What #4471 holds
+## What the export holds
 
 <ProblemTable ticket={4471} repo="hops-on-pop/mega-dev" tickets={{ parser: 1, hint: 2, 'one-day': 3 }} />
 
-## How to tell them apart
+## How the desk classified the reports
 
-- **`parser`**: the shared parser reads every date month first. Every tenant on file writes the
-  day first, so day and month swap: a booking for 7 April lands on 4 July. Any channel.
-- **`hint`**: booking-v3 prints `MM/DD/YYYY` under its date field. People type what it says,
-  month first, and the form reads the date day first. Same swap, different bug: only the `form`
-  channel of booking-v3 tenants, and fixing the parser does not fix it.
-- **`one-day`**: day and month stay put; the invite lands a day early or late, shows a different
-  weekday to people in different places, or arrives before the booking was made. That is not
-  date order. The desk noted these (`desk-notes.json`) and counts them where they are filed, under
-  `parser` by tenant; the table does the same and gives them a row of their own.
+- **Parser:** the shared parser read dates month first while the tenants wrote day first.
+  This could swap the day and month. Engineering reports this parser bug fixed.
+- **Hint:** booking-v3 printed `MM/DD/YYYY`, while the form read dates day first.
+  This was a different cause of swapped dates. The form was retired rather than fixed.
+- **One-day observation:** the desk noted reports about dates moving by one day in `desk-notes.json`.
+  The classification code includes them under parser by tenant. Their symptoms warrant investigation,
+  but neither the export nor the engineering update confirms a distinct root cause or their resolution.
 
-Intake's tag is a guess from the reporter's browser. The tenant decides the cause, so the table
-counts by tenant, not by tag.
+Intake's tag is a guess from the reporter's browser. The table uses the desk's tenant and channel
+rules, deduplicates by report ID, and preserves the export's counts.
 
 ## Lessons
 
-- A subject line tells you a report is about dates. It does not tell you which bug. Before you
-  mark a big ticket known, split it by cause, not by subject.
-- A footnote is easy to miss. If the desk reads a report differently from the rule, give it a
-  ticket of its own, even while it stays counted where it is filed.
+- Read the computed views alongside the prose. A shared subject does not establish a shared cause.
+- Keep anomalous reports visible without promoting an unexplained symptom into a confirmed cause.
+- Check current engineering updates before closing tickets. Fixed and won't fix require different closure reasons.
 
 <RenderStamp {signature} />

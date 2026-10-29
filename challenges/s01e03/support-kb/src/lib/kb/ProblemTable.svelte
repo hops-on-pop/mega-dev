@@ -13,12 +13,12 @@
 <p class="sum">
   <strong>{split.unique}</strong> reports merged into #{ticket} ·
   <strong>{split.groups.length}</strong>
-  {split.groups.length === 1 ? 'problem' : 'problems'}, counted the desk's way
+  {split.groups.length === 1 ? 'cause' : 'causes'}, counted the desk's way
 </p>
 
 <table>
   <thead>
-    <tr><th>problem</th><th>reports</th><th>tenants</th><th>seen</th><th>intake tagged otherwise</th><th>ticket</th></tr>
+    <tr><th>cause</th><th>reports</th><th>tenants</th><th>seen</th><th>intake tagged otherwise</th><th>ticket</th></tr>
   </thead>
   <tbody>
     {#each split.groups as g (g.problem)}
@@ -40,10 +40,14 @@
   </tbody>
 </table>
 
-{#each split.groups.filter((g) => g.filedUnder.length) as g (g.problem)}
+{#each split.observations as g (g.problem)}
   <p class="note">
     {g.reports} reports read as a <code>{g.problem}</code> move are counted where the desk files them
-    (<code>{g.filedUnder.join(', ')}</code>, by tenant) and again on their own row.
+    (<code>{g.filedUnder.join(', ')}</code>, by tenant). They are an unresolved observation,
+    not an additional confirmed cause or an extra count.
+    {#if tickets['one-day']}
+      <a href="https://github.com/{repo}/issues/{tickets['one-day']}">Investigation #{tickets['one-day']}</a> remains open.
+    {/if}
   </p>
 {/each}
 
