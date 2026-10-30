@@ -9,6 +9,7 @@ Replace placeholders; update this file in place. Put chronology in the attempt l
 - Local commit / remote commit: <SHAs; note uncommitted changes>
 - Repository and challenge: <URLs and challenge ID>
 - Authorization: <approved actions, scope, and remaining user-only actions>
+- Waiting on: <party, the signal that ends the wait, issues held open meanwhile; none>
 - Next action: <one concrete action and evidence supporting it; none if solved>
 
 ## Requirements and evidence
@@ -22,6 +23,14 @@ Replace placeholders; update this file in place. Put chronology in the attempt l
 - Issued proofs: <names, destinations, recovery method; no raw values>
 - Submission shape: <field names and meaning; no credentials>
 - Acceptance evidence: <explicit solve response and debrief URL, when available>
+
+## Remaining steps
+
+Each step that closes, cleans up or can't be undone needs its source.
+
+| Step | Source (course text, date read) or "guess" | Close or done condition | Waits on |
+| --- | --- | --- | --- |
+| <step> | <tool field or page section> | <exact condition> | <party/signal or none> |
 
 ## Verified facts
 
